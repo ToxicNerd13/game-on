@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#title h1 {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 85px;
+}
+#search-row {
+    margin-top: 20vh;
+    font-family: 'Electrolize', sans-serif;
+}
