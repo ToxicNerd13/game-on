@@ -25,7 +25,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- My CSS files -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 
 
@@ -39,17 +39,31 @@
             </div>
         </div>
 
-        <div class="row justify-content-center" id="search-row">
-            <div class="col-4">
-                <form class="mt-2 text-center" id="search-bar">
-                    <div class="input-group">
-                        <input type="search" class="form-control form-control-lg text-center" id="game-search"
-                            placeholder="Search for a game!">
-                    </div>
-                    <button class="btn btn-outline-light btn-sm mt-2 w-50" type="submit" id="sBtn">SEARCH</button>
-                </form>
+        <form>
+            <div class="row justify-content-center" id="search-row">
+                <div class="col-4 text-center">
+                    <input type="search" class="form-control form-control-lg text-center" id="search-bar"
+                        placeholder="Search for a game!">
+                </div>
+
+                <div class="col-2">
+                    <select class="form-select">
+                        <option selected>Platform...</option>
+                        <option>PC</option>
+                        <option>PS4</option>
+                        <option>PS5</option>
+                        <option>Xbox One</option>
+                        <option>Switch</option>
+                      </select>
+                </div>
             </div>
-        </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-4 text-center">
+                    <button class="btn btn-outline-light btn-sm mt-2 w-50" type="submit" id="sBtn">SEARCH</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- Bootstrap jQuery and JS-->

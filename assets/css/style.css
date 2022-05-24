@@ -1,8 +1,8 @@
 body {
     background-color: black;
-    background-image: url("./background.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 #title h1 {
     color: white;
