@@ -28,41 +28,102 @@
 </head>
 
 <body>
-      <div class="container-fluid">
-            <div class="row mt-1 justify-content-end">
-                  <div class="col-auto me-1" id="sign-in">
-                        <a href="signin.html">Sign In</a>
-                        <br>
-                        <a href="signin.html">Create Account</a>
-                  </div>
-            </div>
+      <div id="page-container">
+            <div class="container-fluid">
+                  <header class="row justify-content-start align-items-center">
+                        <div class="col-auto" id="small-title">
+                              <a href="index.html">GAME ON</a>
+                        </div>
 
-            <div class="row mt-3" id="title">
-                  <div class="col-auto text-center mx-auto">
-                        <h1>GAME ON</h1>
-                  </div>
-            </div>
-      </div>
-
-      <div class="container">
-            <div class="row mt-3 justify-content-center">
-                  <div class="col-9">
-                        <div class="card">
-                              <img src="..." class="card-img-top" alt="...">
-                              <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                        <div class="col-5 ms-4">
+                              <div class="input-group">
+                                    <input type="search" class="form-control w-75" placeholder="Search for a game!">
+                                    <select class="form-select w-auto" id="platform-select">
+                                          <option selected>Platform</option>
+                                          <option value="pc">PC</option>
+                                          <option value="ps4">PS4</option>
+                                          <option value="ps5">PS5</option>
+                                          <option value="xbox one">Xbox One</option>
+                                          <option value="switch">Switch</option>
+                                    </select>
+                                    <button class="btn btn-sm" type="submit" id="search-btn">
+                                          <i class="fas fa-search"></i>
+                                    </button>
                               </div>
-                              <div class="card-body">
-                                    <table>
-                                          <tr>
-                                                <th></th>
-                                          </tr>
-                                    </table>
+                        </div>
+
+                        <div class="col-auto ms-auto me-1 my-1 p-2" id="sign-in">
+                              <a href="signin.html">Sign In</a>
+                              <br>
+                              <a href="signin.html">Sign Up</a>
+                        </div>
+                  </header>
+            </div>
+
+            <div class="container" id="reviews-container">
+                  <div class="row my-5 justify-content-center">
+                        <div class="col-4 text-center">
+                              <img src="./assets/images/game-cover.jpg" height="200px" alt="Game cover image"
+                                    id="game-cover">
+                        </div>
+                  </div>
+
+                  <div class="row my-4 justify-content-center">
+                        <div class="col-8 mb-4">
+                              <div class="card">
+                                    <div class="card-body text-center">
+                                          <h5 class="card-title" id="result-title">GENERIC VIDEO GAME</h5>
+                                    </div>
+                                    <div class="card-body">
+                                          <table>
+                                                <tr>
+                                                      <th>Reviewer</th>
+                                                      <th style="width: 30%">Date Reviewed</th>
+                                                      <th style="width: 20%">Score</th>
+                                                </tr>
+                                                <tr>
+                                                      <td><a href="https://www.ign.com/" target="_blank">IGN</a></td>
+                                                      <td>March 7, 2021</td>
+                                                      <td>8.2</td>
+                                                </tr>
+                                                <tr>
+                                                      <td><a href="https://www.gamespot.com/"
+                                                                  target="_blank">GameSpot</a></td>
+                                                      <td>July 12, 2021</td>
+                                                      <td>8.7</td>
+                                                </tr>
+                                                <tr>
+                                                      <td><a href="https://www.metacritic.com/"
+                                                                  target="_blank">Metacritic</a></td>
+                                                      <td>January 22, 2022</td>
+                                                      <td>8.1</td>
+                                                </tr>
+                                          </table>
+                                    </div>
                               </div>
                         </div>
                   </div>
             </div>
+
+            <!-- Footer -->
+            <div class="container-fluid">
+                  <footer class="row justify-content-between align-items-center mt-5" id="footer">
+                        <div class="col-auto">
+                              &copy; 2022 KILLORAN RIVERS
+                        </div>
+                        <div class="col-auto">
+                              <a href="https://www.redventures.com/legal/privacy-policy">Privacy Policy</a>
+                              <a href="https://cookies.co/">Cookie Settings</a>
+                              <a href="https://www.redventures.com/legal/cmg-terms-of-use">Terms of Use</a>
+                        </div>
+                  </footer>
+            </div>
       </div>
+
+      <!-- Bootstrap JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

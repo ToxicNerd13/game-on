@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+#reviews-container {
+    padding-bottom: 8vh;
+}
 #home-page body {
     background-color: black;
     background-image: url("../images/background.jpg");
@@ -7,15 +17,36 @@
 #results-page body {
     background-color: black;
 }
-#title h1 {
+header {
+    background-color: rgb(32, 31, 31);;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: rgb(110, 195, 216);
+}
+#title a {
     color: white;
     font-family: 'Press Start 2P', cursive;
     font-size: 85px;
+    text-decoration: none;
+}
+#small-title a {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 45px;
+    text-decoration: none;
+}
+#search-btn {
+    color: white;
 }
 #sign-in {
     font-family: 'Electrolize', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 24px;
     border: 2px dashed white;
+    padding: 5px;
 }
 #sign-in a {
     color: white;
@@ -28,3 +59,39 @@
     margin-top: 20vh;
     font-family: 'Electrolize', sans-serif;
 }
+#game-cover {
+    border: 2px solid rgb(110, 195, 216);
+    box-shadow: 0 4px 8px 0 rgb(144, 194, 206), 0 6px 20px 0 rgb(144, 194, 206);
+}
+table {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  #result-title {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 30px;
+  }
+  #signin-row {
+      margin-top: 20vh;
+  }
+  #signin-card {
+    box-shadow: 5px 10px 8px rgb(82, 81, 81);
+  }
+  #footer {
+      color: rgb(177, 175, 175);
+      background-color: rgb(32, 31, 31);
+      height: 8vh;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+  }
+  #footer a {
+      color: rgb(177, 175, 175);
+      text-decoration: none;
+      margin-right: 9px;
+  }
