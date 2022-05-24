@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="home-page" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -26,41 +26,43 @@
 
     <!-- My CSS files -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
-
-
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center mt-5" id="title">
-            <div class="col-8 text-center">
-                <h1>GAME ON</h1>
+    <div class="container-fluid">
+        <div class="row mt-1 justify-content-end">
+            <div class="col-auto me-1" id="sign-in">
+                <a href="signin.html">Sign In</a>
+                <br>
+                <a href="signin.html">Create Account</a>
             </div>
         </div>
 
+        <div class="row mt-3" id="title">
+            <div class="col-auto text-center mx-auto">
+                <h1>GAME ON</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
         <form>
             <div class="row justify-content-center" id="search-row">
-                <div class="col-4 text-center">
-                    <input type="search" class="form-control form-control-lg text-center" id="search-bar"
+                <div class="col-5 text-center">
+                    <input type="search" class="form-control form-control-lg text-center mb-2" id="search-bar"
                         placeholder="Search for a game!">
-                </div>
 
-                <div class="col-2">
-                    <select class="form-select">
-                        <option selected>Platform...</option>
+                    <label for="platform-select" class="form-label"
+                        style="color: white; margin-bottom: 0;">Platform</label>
+                    <select class="form-select w-25 mx-auto" id="platform-select">
                         <option>PC</option>
                         <option>PS4</option>
                         <option>PS5</option>
                         <option>Xbox One</option>
                         <option>Switch</option>
-                      </select>
-                </div>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-4 text-center">
-                    <button class="btn btn-outline-light btn-sm mt-2 w-50" type="submit" id="sBtn">SEARCH</button>
+                    </select>
+
+                    <button class="btn btn-outline-light btn-lg mt-3 w-50" type="submit" id="sBtn">SEARCH</button>
                 </div>
             </div>
         </form>

@@ -1,13 +1,28 @@
-body {
+#home-page body {
     background-color: black;
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+#results-page body {
+    background-color: black;
+}
 #title h1 {
     color: white;
     font-family: 'Press Start 2P', cursive;
     font-size: 85px;
+}
+#sign-in {
+    font-family: 'Electrolize', sans-serif;
+    font-size: 22px;
+    border: 2px dashed white;
+}
+#sign-in a {
+    color: white;
+    text-decoration: none;
+}
+#sign-in a:hover {
+    color: rgb(110, 195, 216);
 }
 #search-row {
     margin-top: 20vh;
