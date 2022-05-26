@@ -8,7 +8,7 @@ body {
     position: relative;
     min-height: 100vh;
 }
-#reviews-container {
+#content-container {
     padding-bottom: 8vh;
 }
 #home-page body {
@@ -94,4 +94,9 @@ table, th, td {
   }
   .bg-black {
       background-color: black;
+      border: 1px solid white;
+  }
+  .bg-red {
+    background-color: black;
+    border: 3px solid red;
   }

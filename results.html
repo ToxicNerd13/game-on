@@ -60,7 +60,7 @@
                   </header>
             </div>
 
-            <div class="container" id="reviews-container">
+            <div class="container" id="content-container">
                   <div class="row my-5 justify-content-center">
                         <div class="col-4 text-center">
                               <img src="./assets/images/game-cover.jpg" height="200px" alt="Game cover image"
@@ -75,28 +75,12 @@
                                           <h5 class="card-title" id="result-title"></h5>
                                     </div>
                                     <div class="card-body">
-                                          <table>
+                                          <table id="results-table">
                                                 <tr>
                                                       <th>Reviewer</th>
                                                       <th style="width: 30%">Date Reviewed</th>
                                                       <th style="width: 20%">Score</th>
-                                                </tr>
-                                                <tr>
-                                                      <td><a href="https://www.ign.com/" target="_blank">IGN</a></td>
-                                                      <td>March 7, 2021</td>
-                                                      <td>8.2</td>
-                                                </tr>
-                                                <tr>
-                                                      <td><a href="https://www.gamespot.com/"
-                                                                  target="_blank">GameSpot</a></td>
-                                                      <td>July 12, 2021</td>
-                                                      <td>8.7</td>
-                                                </tr>
-                                                <tr>
-                                                      <td><a href="https://www.metacritic.com/"
-                                                                  target="_blank">Metacritic</a></td>
-                                                      <td>January 22, 2022</td>
-                                                      <td>8.1</td>
+                                                      <!-- The rest of the rows will be dynamically populated from reviews array -->
                                                 </tr>
                                           </table>
                                     </div>
@@ -125,9 +109,10 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
 
-            <!-- My Javascript & jQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+      <!-- My Javascript & jQuery-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="./assets/js/results.js"></script>
 </body>
 
 </html>
