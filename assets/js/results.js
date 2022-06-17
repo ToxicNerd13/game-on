@@ -17,49 +17,6 @@ $(document).ready(function () {
   // Display Logout or Sign In/Up, depending on the user's login status
   renderLogin(signedIn);
 
-  // Hard coded array of review data since I was too lazy to use an API
-  const reviews = [
-    {
-      reviewer: "IGN",
-      url: "https://www.ign.com/",
-      date: "March 7, 2021",
-      score: "8.2",
-    },
-    {
-      reviewer: "GameSpot",
-      url: "https://www.gamespot.com/",
-      date: "July 12, 2021",
-      score: "8.7",
-    },
-    {
-      reviewer: "Metacritic",
-      url: "https://www.metacritic.com/",
-      date: "January 22, 2022",
-      score: "8.1",
-    },
-  ];
-
-  // Loop through reviews array. For each object, create a row for each property/value. Then append those to the table.
-  for (let i = 0; i < reviews.length; i++) {
-    const reviewRow = document.createElement("tr");
-    const reviewerTd = document.createElement("td");
-    const dateTd = document.createElement("td");
-    dateTd.textContent = `${reviews[i].date}`;
-    const scoreTd = document.createElement("td");
-    scoreTd.textContent = `${reviews[i].score}`;
-    const link = document.createElement("a");
-    link.href = `${reviews[i].url}`;
-    link.target = "_blank";
-    link.textContent = `${reviews[i].reviewer}`;
-    reviewerTd.append(link);
-    reviewRow.append(reviewerTd);
-    reviewRow.append(dateTd);
-    reviewRow.append(scoreTd);
-    fragment.append(reviewRow);
-  }
-
-  resultsTable.append(fragment);
-
   // Test email against the regex to make sure it fits the pattern. If so, signedIn status will be set to true and user will be redirected to the home page. If not, the input will turn red and the user will be alerted to enter a valid email.
   function validate(email) {
     if (regEx.test(email)) {
@@ -79,9 +36,8 @@ $(document).ready(function () {
       $("#sign-in").html("<a href='index.html' id='logout-btn'>Logout</a>");
     } else {
       $("#sign-in").html(
-        "<a href='signin.html'>Sign In</a>\
-                                <br>\
-                                <a href='signup.html'>Sign Up</a>"
+        "<div><a href='signin.html'>Sign In</a></div>\
+        <div><a href='signup.html'>Sign Up</a></div>"
       );
     }
   }

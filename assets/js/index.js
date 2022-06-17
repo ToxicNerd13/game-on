@@ -26,9 +26,8 @@ $(document).ready(function () {
       $("#sign-in").html("<a href='index.html' id='logout-btn'>Logout</a>");
     } else {
       $("#sign-in").html(
-        "<a href='signin.html'>Sign In</a>\
-                                <br>\
-                                <a href='signup.html'>Sign Up</a>"
+        "<div><a href='signin.html'>Sign In</a></div>\
+         <div><a href='signup.html'>Sign Up</a></div>"
       );
     }
   }
